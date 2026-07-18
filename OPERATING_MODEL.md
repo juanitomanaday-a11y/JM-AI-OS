@@ -27,6 +27,7 @@ data/               THE source of truth. Seven JSON files. See data/README.md.
 docs/SOP/           Standard operating procedures.
 docs/Templates/     Reusable templates.
 docs/Reports/       Generated or written reports.
+docs/Governance/    Governance and documentation standards.
 assets/             Images and static assets.
 .github/workflows/  Reserved for future GitHub Actions. Empty by design.
 ```
@@ -72,7 +73,8 @@ Four collaborators, one pipeline:
 - Dates: `YYYY-MM-DD`. Timestamps: ISO with timezone (`+08:00` for JM).
 - JavaScript: `camelCase` functions and variables, descriptive names, no abbreviations.
 - CSS: design tokens in `:root`, class names in `kebab-case`.
-- Docs: place in `docs/SOP`, `docs/Templates`, or `docs/Reports` — nowhere else.
+- Docs: place in `docs/SOP`, `docs/Templates`, `docs/Reports`, or
+  `docs/Governance` — nowhere else.
 
 ## 7. How to add a new feature
 

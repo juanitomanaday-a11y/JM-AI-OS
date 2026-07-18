@@ -1,6 +1,6 @@
 # /docs — Documentation Center
 
-Three folders, three purposes. Nothing else goes in /docs.
+Four folders, four purposes. Nothing else goes in /docs.
 
 ## SOP/
 Standard Operating Procedures. One Markdown file per procedure.
@@ -20,6 +20,13 @@ Naming: `TPL-<short-name>.md`.
 Written or generated reports: audits, weekly summaries, retrospectives.
 
 Naming: `RPT-YYYY-MM-DD-<short-name>.md` so reports sort chronologically.
+
+## Governance/
+Governance Documents: the rules and standards for how documentation and
+the repository are created, reviewed, approved, versioned, and maintained.
+See `docs/Governance/README.md` for the full list.
+
+Naming: `GOV-<short-name>.md`.
 
 ---
 

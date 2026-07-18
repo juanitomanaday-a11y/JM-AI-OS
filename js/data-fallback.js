@@ -21,8 +21,8 @@ window.JM_FALLBACK_DATA = {
     "tagline": "Operations Command Center"
   },
   "version": {
-    "version": "0.1.1",
-    "build": "Privacy scrub",
+    "version": "0.2.0",
+    "build": "Batch 2: Governance and Documentation Standards",
     "last_updated": "2026-07-18",
     "updated_by": "AI"
   },
@@ -209,6 +209,12 @@ window.JM_FALLBACK_DATA = {
         "decision": "One sanctioned data mirror exists: js/data-fallback.js. It must be updated whenever any /data JSON file changes.",
         "reason": "Browsers block reading local JSON when index.html is opened directly from disk (file://). The mirror makes double-click-to-open work. On GitHub Pages the real JSON files are used.",
         "approved_by": "PENDING - needs JM sign-off"
+      },
+      {
+        "date": "2026-07-18",
+        "decision": "Adopted a Governance and Documentation Standards layer (Batch 2) in docs/Governance/, covering documentation lifecycle, version control, change management, repository maintenance, review, approval, quality, naming, folder structure, document relationships, cross-references, validation, audit, change log, and release standards.",
+        "reason": "Establishes consistent rules for how documentation is created, reviewed, approved, versioned, and maintained as the repository grows, without altering SYSTEM_RULES.md or any Batch 1 document.",
+        "approved_by": "PENDING - needs JM sign-off"
       }
     ]
   },
@@ -233,6 +239,11 @@ window.JM_FALLBACK_DATA = {
         "timestamp": "2026-07-18T15:30:00+08:00",
         "actor": "AI",
         "action": "Privacy scrub per JM instruction: client names replaced with placeholders (Client 01-06), company name removed from config. IDs unchanged. v0.1.1."
+      },
+      {
+        "timestamp": "2026-07-18T16:00:00+08:00",
+        "actor": "AI",
+        "action": "Batch 2: created the Governance and Documentation Standards layer in docs/Governance/ (18 standards plus glossary and folder index). Added docs/Governance/ to the folder maps in README.md, OPERATING_MODEL.md, and docs/README.md. No Batch 1 documents rewritten. Logged as PENDING in decisions.json. v0.2.0."
       }
     ]
   }
