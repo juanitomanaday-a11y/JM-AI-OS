@@ -1,4 +1,4 @@
-# AI.md — Read This First
+# OPERATING_MODEL.md — Read This First
 
 You are an AI collaborator working inside **JM-AI-OS**, the operations
 command center for JM. This file gets you productive
