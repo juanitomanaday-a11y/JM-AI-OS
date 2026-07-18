@@ -45,7 +45,8 @@ JM-AI-OS/
 ├── docs/
 │   ├── SOP/               # Standard operating procedures
 │   ├── Templates/         # Reusable templates
-│   └── Reports/           # Reports
+│   ├── Reports/           # Reports
+│   └── Governance/        # Governance and documentation standards
 ├── assets/                # Images and static files
 └── .github/workflows/     # Reserved for future automation (empty)
 ```
