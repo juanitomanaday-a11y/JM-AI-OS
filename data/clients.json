@@ -1,0 +1,41 @@
+{
+  "_note": "Client names are placeholders for privacy. JM keeps the real name mapping privately. IDs are permanent - never change them.",
+  "clients": [
+    {
+      "id": "c-001",
+      "name": "Client 01",
+      "status": "active",
+      "platforms": []
+    },
+    {
+      "id": "c-002",
+      "name": "Client 02",
+      "status": "active",
+      "platforms": []
+    },
+    {
+      "id": "c-003",
+      "name": "Client 03",
+      "status": "active",
+      "platforms": []
+    },
+    {
+      "id": "c-004",
+      "name": "Client 04",
+      "status": "active",
+      "platforms": []
+    },
+    {
+      "id": "c-005",
+      "name": "Client 05",
+      "status": "active",
+      "platforms": []
+    },
+    {
+      "id": "c-006",
+      "name": "Client 06",
+      "status": "active",
+      "platforms": []
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "_note": "SAMPLE DATA. These tasks show the schema in action. Replace with real tasks. See data/README.md for field definitions.",
+  "tasks": [
+    {
+      "id": "t-001",
+      "title": "[SAMPLE] Build New Title Requirements sheet",
+      "client_id": "c-001",
+      "project": "Catalog Management",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "in_progress",
+      "priority": "high",
+      "due_date": "2026-07-24"
+    },
+    {
+      "id": "t-002",
+      "title": "[SAMPLE] Run monthly Account Health Audit",
+      "client_id": "c-002",
+      "project": "Account Health",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "todo",
+      "priority": "high",
+      "due_date": "2026-07-27"
+    },
+    {
+      "id": "t-003",
+      "title": "[SAMPLE] QA review of listing updates",
+      "client_id": "c-003",
+      "project": "QA",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "todo",
+      "priority": "medium",
+      "due_date": "2026-07-29"
+    },
+    {
+      "id": "t-004",
+      "title": "[SAMPLE] Draft SOP: weekly catalog change log",
+      "client_id": "c-004",
+      "project": "SOP Library",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "blocked",
+      "priority": "medium",
+      "due_date": "2026-07-22"
+    },
+    {
+      "id": "t-005",
+      "title": "[SAMPLE] Update Slack/email triage tracker",
+      "client_id": "",
+      "project": "Internal Ops",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "completed",
+      "priority": "low",
+      "due_date": "2026-07-15"
+    },
+    {
+      "id": "t-006",
+      "title": "[SAMPLE] Research pricing tool options",
+      "client_id": "c-005",
+      "project": "Tooling",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "todo",
+      "priority": "low",
+      "due_date": "2026-08-05"
+    },
+    {
+      "id": "t-007",
+      "title": "[SAMPLE] Verify catalog variation fix went live",
+      "client_id": "c-006",
+      "project": "Catalog Management",
+      "owner": "JM",
+      "assigned_ai": "AI",
+      "status": "in_progress",
+      "priority": "high",
+      "due_date": "2026-07-16"
+    }
+  ]
+}

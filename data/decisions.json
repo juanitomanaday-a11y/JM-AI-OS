@@ -1,0 +1,22 @@
+{
+  "decisions": [
+    {
+      "date": "2026-07-18",
+      "decision": "JM-AI-OS built as a static site: HTML, CSS, vanilla JavaScript, and local JSON files only. No frameworks, no build tools, no dependencies.",
+      "reason": "Maximizes portability, readability, and long-term maintainability. Any AI or human can understand and extend it.",
+      "approved_by": "JM (mandated in the Master Execution Prompt)"
+    },
+    {
+      "date": "2026-07-18",
+      "decision": "JSON files in /data are the single source of truth. Browser edits are temporary until written back into the JSON files.",
+      "reason": "A static site cannot save files. Keeping JSON canonical avoids hidden state and keeps Git as the change history.",
+      "approved_by": "PENDING - needs JM sign-off"
+    },
+    {
+      "date": "2026-07-18",
+      "decision": "One sanctioned data mirror exists: js/data-fallback.js. It must be updated whenever any /data JSON file changes.",
+      "reason": "Browsers block reading local JSON when index.html is opened directly from disk (file://). The mirror makes double-click-to-open work. On GitHub Pages the real JSON files are used.",
+      "approved_by": "PENDING - needs JM sign-off"
+    }
+  ]
+}

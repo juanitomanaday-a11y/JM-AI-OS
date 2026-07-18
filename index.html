@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+  JM-AI-OS — Operations Command Center
+  Purpose: Static dashboard shell. Contains NO business data.
+           All content is rendered by js/app.js from /data JSON files.
+  Rule:    Never hardcode clients, tasks, or decisions in this file.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM-AI-OS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Banner shown only when running from a local file (offline mirror in use) -->
+  <div id="offline-banner" class="offline-banner hidden">
+    Offline mode: showing data from the built-in mirror (js/data-fallback.js).
+    On GitHub Pages or a local server, the live /data JSON files are used.
+  </div>
+
+  <!-- Banner shown only after an inline edit is made in the browser -->
+  <div id="edit-banner" class="edit-banner hidden">
+    Heads up: edits made here are temporary. They disappear on refresh.
+    To make a change permanent, update the matching file in /data.
+  </div>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div>
+        <h1 id="app-name">JM-AI-OS</h1>
+        <p id="app-tagline" class="tagline"></p>
+      </div>
+      <div class="header-meta">
+        <span id="app-company" class="company"></span>
+        <span id="app-version" class="version-chip"></span>
+      </div>
+    </div>
+    <nav class="app-nav">
+      <a href="#summary">Summary</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#clients">Clients</a>
+      <a href="#decisions">Decisions</a>
+      <a href="#activity">Activity</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ EXECUTIVE SUMMARY ============ -->
+    <section id="summary">
+      <p class="eyebrow">Executive Summary</p>
+      <div id="summary-cards" class="stat-grid">
+        <!-- Stat cards rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- ============ TASK MANAGER ============ -->
+    <section id="tasks">
+      <p class="eyebrow">Task Manager</p>
+      <div class="task-controls">
+        <input type="search" id="task-search" placeholder="Search tasks…" aria-label="Search tasks">
+        <select id="filter-status" aria-label="Filter by status">
+          <option value="">All statuses</option>
+          <option value="todo">To do</option>
+          <option value="in_progress">In progress</option>
+          <option value="blocked">Blocked</option>
+          <option value="completed">Completed</option>
+        </select>
+        <select id="filter-priority" aria-label="Filter by priority">
+          <option value="">All priorities</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <select id="filter-client" aria-label="Filter by client">
+          <option value="">All clients</option>
+          <!-- Client options rendered by app.js -->
+        </select>
+        <select id="sort-tasks" aria-label="Sort tasks">
+          <option value="due_date">Sort: Due date</option>
+          <option value="priority">Sort: Priority</option>
+          <option value="status">Sort: Status</option>
+          <option value="title">Sort: Title</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table id="task-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Client</th>
+              <th>Project</th>
+              <th>Owner</th>
+              <th>AI</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th>Due</th>
+            </tr>
+          </thead>
+          <tbody id="task-tbody">
+            <!-- Task rows rendered by app.js -->
+          </tbody>
+        </table>
+      </div>
+      <p id="task-empty" class="empty-note hidden">No tasks match the current filters.</p>
+    </section>
+
+    <!-- ============ CLIENT OVERVIEW ============ -->
+    <section id="clients">
+      <p class="eyebrow">Client Overview</p>
+      <div id="client-cards" class="client-grid">
+        <!-- Client cards rendered by app.js from clients.json -->
+      </div>
+    </section>
+
+    <!-- ============ DECISION LOG ============ -->
+    <section id="decisions">
+      <p class="eyebrow">Decision Log</p>
+      <div id="decision-list" class="decision-list">
+        <!-- Decisions rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- ============ AI ACTIVITY FEED ============ -->
+    <section id="activity">
+      <p class="eyebrow">AI Activity Feed</p>
+      <p class="pipeline-label">Pipeline: AI → AI → AI → JM approval</p>
+      <div id="activity-feed" class="activity-feed">
+        <!-- Timeline rendered by app.js from history.json -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <span>JM-AI-OS — single source of truth lives in /data.</span>
+    <span id="footer-updated"></span>
+  </footer>
+
+  <!-- Offline mirror loads first; app.js prefers live JSON via fetch -->
+  <script src="js/data-fallback.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

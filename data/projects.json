@@ -1,0 +1,11 @@
+{
+  "_note": "SAMPLE DATA. Projects group tasks. 'client_id' is empty for internal projects.",
+  "projects": [
+    { "id": "p-001", "name": "Catalog Management", "client_id": "", "status": "active" },
+    { "id": "p-002", "name": "Account Health", "client_id": "", "status": "active" },
+    { "id": "p-003", "name": "QA", "client_id": "", "status": "active" },
+    { "id": "p-004", "name": "SOP Library", "client_id": "", "status": "active" },
+    { "id": "p-005", "name": "Internal Ops", "client_id": "", "status": "active" },
+    { "id": "p-006", "name": "Tooling", "client_id": "", "status": "active" }
+  ]
+}
